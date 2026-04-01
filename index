@@ -1,0 +1,1322 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MOVISAFE – Admin APPS</title>
+  <link rel="icon" href="/favicon.png" type="image/gif">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/build/css/intlTelInput.css">
+  <link rel="stylesheet" href="/build/css/demo.css?v1">
+  <link href="/select2.min.css" rel="stylesheet" type="text/css">
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="/build/js/intlTelInput.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js
+"></script>
+  <script src="/select2.min.js"></script>
+
+<style>
+  .navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
+    background-color: #00688B;
+  }
+
+  #menu {
+    float: right;
+  }
+
+  .alarm-flash {
+    animation: flash 1s infinite;
+  }
+
+  @keyframes flash {
+    0% { background-color: white; }
+    50% { background-color: red; }
+  }
+</style><style id="monica-reading-highlight-style">
+        .monica-reading-highlight {
+          animation: fadeInOut 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInOut {
+          0%, 100% { background-color: transparent; }
+          30%, 70% { background-color: rgba(2, 118, 255, 0.20); }
+        }
+      </style></head>
+
+
+
+<body monica-id="fhimbbbmdjiifimnepkibjfjbppnjble" monica-version="8.0.1">
+  <header>
+    <!-- navbar -->
+    <div id="top">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#021e42;">
+
+        <!-- <a class="navbar-brand" href="#">Movi-Sos</a> -->
+        <img src="/images/LogoMovisafe_Quadri.png" width="100" height="50">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <ul class="navbar-nav  mr-auto">
+              									<li class="nav-item ">
+						<a class="nav-link " href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/dashboard">MOVI SOS <span class="sr-only">(current)</span></a>
+					</li>
+				                                  <li id="btn-alertlist" class="nav-item">
+                    <a class="nav-link" href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertList">SOS Alerts</a>
+                  </li>
+                                                  <li class="nav-item dropdown">
+                    <a class="nav-link" id="navbarDropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Users
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownUser">
+                      <a class="dropdown-item" href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/adduser">Add User</a>
+                      <a class="dropdown-item" href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/userlist">View Users</a>
+                                              <a class="dropdown-item" href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/addclients">Add Business client</a>
+                        <a class="dropdown-item" href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/clientdetails">All Business Clients</a>
+                                          </div>
+                  </li>
+                				<li class="nav-item dropdown">
+					<a class="nav-link" id="navbarDropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Configuration</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownUser">
+													<a class="dropdown-item" href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/editsms">Edit SMS Phone</a>
+																			<a class="dropdown-item" href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/editcentralphone">Edit central Phone</a>
+											</div>
+				</li>
+            </ul>
+            <ul class="navbar-nav  mr-auto"></ul>
+            <ul class="navbar-nav  mr-right">
+              <li class="nav-item ">
+                <a class="nav-link">r.peres@movisafe-amlat.com</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" data-toggle="modal" data-target="#basicExampleModal">Logout</a>
+                </div>
+              </li>
+                        </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Test Button for Immediate Alarm Activation -->
+  <div style="text-align: center; margin: 20px;">
+    <button id="testAlarmBtn" class="btn btn-danger">Ativar Alarme de Teste Imediatamente</button>
+  </div>
+
+
+
+
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Confirm logout</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+
+      <div class="modal-footer">
+        <a class="btn btn-indigo btn-sm" data-dismiss="modal">Close</a>
+        <a class="btn btn-indigo btn-sm" href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/logout">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="activeAlerts" tabindex="-1" role="dialog" aria-labelledby="activeAlertsLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog modal-lx" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="activeAlertsLabel">Alertas Ativos</h5>
+      </div>
+      <div class="modal-body" id="activeAlertsDetail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-sm" id="acknowledgeBtn">Reconhecer Alerta</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+    let alarmActive = false;
+    let acknowledged = false;
+    //const audio = new Audio("/sounds/alert.wav" );
+    
+
+    //$("#btnActiveAlert").click(function(){
+    //  notifyMe();
+    //});
+
+
+    function notifyMe() {
+      if (!Notification) {
+        alert('Desktop notifications not available in your browser. Try Chromium.');
+        return;
+      }
+
+      
+
+      if (Notification.permission !== 'granted'){
+        Notification.requestPermission().then(function(getperm) 
+      { 
+
+          console.log('Perm granted', getperm) 
+
+      });
+      }else {
+        
+        var notification = new Notification('Notification title', {
+        icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
+        body: 'Alertas Ativos!!!',
+        });
+        notification.onclick = function() {
+        window.open('');
+        };
+        audio.play();
+      }
+    }
+
+    function startAlarm(){
+      if(!alarmActive){
+        alarmActive = true;
+        $('body').addClass('alarm-flash');
+        // Use Web Audio API for loud alarm sound
+        try {
+          const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          audioContext.resume().then(() => {
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            gainNode.gain.setValueAtTime(1.0, audioContext.currentTime); // Maximum volume for loud siren
+            
+            oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
+            
+            oscillator.start();
+            
+            // Create siren effect by changing frequency
+            let direction = 1;
+            const sirenInterval = setInterval(() => {
+              const now = audioContext.currentTime;
+              const freq = oscillator.frequency.value;
+              if (freq >= 1200) direction = -1;
+              if (freq <= 800) direction = 1;
+              oscillator.frequency.setValueAtTime(freq + direction * 50, now);
+            }, 100);
+            
+            window.alarmAudioContext = audioContext;
+            window.alarmOscillator = oscillator;
+            window.alarmSirenInterval = sirenInterval;
+          });
+        } catch (e) {
+          // Fallback to file if Web Audio fails
+          const audio = new Audio("https://cdn.freesound.org/previews/377/377125_1402315-lq.mp3");
+          audio.loop = true;
+          audio.volume = 1;
+          audio.play();
+          window.alarmAudio = audio;
+        }
+      }
+    }
+
+    function stopAlarm(){
+      if(alarmActive){
+        alarmActive = false;
+        $('body').removeClass('alarm-flash');
+        if(window.alarmSirenInterval){
+          clearInterval(window.alarmSirenInterval);
+        }
+        if(window.alarmOscillator){
+          window.alarmOscillator.stop();
+        }
+        if(window.alarmAudioContext){
+          window.alarmAudioContext.close();
+        }
+        if(window.alarmAudio){
+          window.alarmAudio.pause();
+          window.alarmAudio.currentTime = 0;
+        }
+      }
+    }
+
+    function getAlerts() {
+      setTimeout(function() {
+          
+          $.ajax({
+              url: 'https://movisos-admin.movisafe-americalatina.com/index.php/admin/ajaxActiveAlerts/',
+              type: 'GET',
+              success: function(data) {
+                  if(data != ''){
+                    $("#activeAlertsDetail").html(data);
+                    if(!$("#btn-alertlist").hasClass("bg-danger")){
+                      $("#activeAlerts").modal('show');
+                      $("#btn-alertlist").addClass("bg-danger");
+                      if(!acknowledged){
+                        startAlarm();
+                      }
+                    }
+                  }else{
+                    $("#btn-alertlist").removeClass("bg-danger");
+                    $("#activeAlerts").modal('hide');
+                    stopAlarm();
+                    acknowledged = false;
+                  }
+              },
+              error: function (request, status, error) {
+                  console.log(request.responseText);
+              },
+              complete: getAlerts,
+              timeout: 10000
+          }) //, 5000  <-- oops.
+      }, 10000); // <-- should be here instead
+    };
+
+    $('#acknowledgeBtn').click(function(){
+      acknowledged = true;
+      stopAlarm();
+      $("#activeAlerts").modal('hide');
+    });
+
+    // Test button to activate alarm immediately after user interaction
+    $('#testAlarmBtn').click(function() {
+      startAlarm();
+      $("#activeAlerts").modal('show');
+      $("#activeAlertsDetail").html('<p>Alerta de teste ativado! Clique em "Reconhecer Alerta" para parar.</p>');
+    });
+
+    getAlerts();
+  });
+</script><div class="container-fluid" style="width:100%;">
+  <div class="row">
+    <div class="col-md-12">
+            <div style="margin-top:10px;">
+                      </div>
+      <div class="row">
+        <div class="col-md-3">
+
+          <div class="post-search-panel">
+            <input type="text" id="keywords" class="form-control" placeholder="Type keywords to filter posts" onkeyup="searchFilter()">
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+
+      <div class="post-search-panel">
+        <style>
+  .view_data {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  .not-allowed {
+    cursor: not-allowed;
+  }
+</style>
+<div class="post-list" id="postList">
+  <div class="table-responsive">
+    <div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div id="model">
+            </div><div class="list-group-item">
+                  <script>
+        function getData(page){  
+            alert('pgdata');
+            $.ajax({
+                method: "POST",
+                url: "https://movisos-admin.movisafe-americalatina.com/index.php/admin/ajaxPaginationAlertData/"+page,
+                data: { page: page },
+                beforeSend: function(){
+                    $('.loading').show();
+                },
+                success: function(data){
+                    $('.loading').hide();
+                    $('#postList').html(data);
+                }
+            });
+        }
+        </script>
+        <div class="post-list" id="postList">Showing 1 to 50 of 2153 | &nbsp;<b>1</b>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(50)">2</a>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(100)">3</a>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(50)">»</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="searchFilter(2150)">Last</a></div>        </div><div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dependents List</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body" id="employee_detail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-indigo btn-sm" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div><table class="table" style="margin-top:10px">
+      <thead class="indigo white-text">
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Date created</th>
+          <th scope="col">Name</th>
+          <th scope="col">Mobile</th>
+          <th scope="col">E-mail</th>
+          <th scope="col">Businness client</th>
+          <th scope="col">Status</th>
+          <th scope="col">Tracking</th>
+        </tr>
+      </thead>
+      <tbody>
+                    <tr>
+                                          <td id="srno1">1</td>
+			                <td>01-04-2026 09:00:17</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2183" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno2">2</td>
+			                <td>31-03-2026 21:00:22</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2182" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno3">3</td>
+			                <td>31-03-2026 17:07:31</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2181" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno4">4</td>
+			                <td>31-03-2026 15:14:02</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2180" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno5">5</td>
+			                <td>31-03-2026 09:09:51</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2179" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno6">6</td>
+			                <td>31-03-2026 09:00:19</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2178" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno7">7</td>
+			                <td>31-03-2026 06:10:33</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2177" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno8">8</td>
+			                <td>31-03-2026 02:00:17</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2176" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno9">9</td>
+			                <td>30-03-2026 21:00:18</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2175" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno10">10</td>
+			                <td>30-03-2026 17:00:15</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2174" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno11">11</td>
+			                <td>30-03-2026 14:00:16</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2173" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno12">12</td>
+			                <td>30-03-2026 09:00:20</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2172" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno13">13</td>
+			                <td>30-03-2026 02:00:17</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2171" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno14">14</td>
+			                <td>29-03-2026 17:00:31</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2170" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno15">15</td>
+			                <td>29-03-2026 15:36:55</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2169" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno16">16</td>
+			                <td>29-03-2026 10:43:26</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2168" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno17">17</td>
+			                <td>28-03-2026 22:40:38</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2167" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno18">18</td>
+			                <td>28-03-2026 17:00:22</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2166" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno19">19</td>
+			                <td>28-03-2026 14:00:18</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2165" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno20">20</td>
+			                <td>28-03-2026 09:00:33</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2164" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno21">21</td>
+			                <td>28-03-2026 06:02:43</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2163" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno22">22</td>
+			                <td>28-03-2026 02:00:16</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2162" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno23">23</td>
+			                <td>27-03-2026 21:00:28</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2161" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno24">24</td>
+			                <td>27-03-2026 17:00:26</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2160" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno25">25</td>
+			                <td>27-03-2026 15:31:39</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2159" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno26">26</td>
+			                <td>27-03-2026 11:41:38</td>
+              <td>Romário Peres</td>
+              <td>+552199242-4412</td>
+              <td>r.peres@movisafe-amlat.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2158" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno27">27</td>
+			                <td>27-03-2026 11:41:24</td>
+              <td>Romário Peres</td>
+              <td>+552199242-4412</td>
+              <td>r.peres@movisafe-amlat.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2157" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno28">28</td>
+			                <td>27-03-2026 10:37:19</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2156" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno29">29</td>
+			                <td>26-03-2026 21:00:14</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2155" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno30">30</td>
+			                <td>26-03-2026 17:00:38</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2154" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno31">31</td>
+			                <td>26-03-2026 14:00:20</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2153" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno32">32</td>
+			                <td>26-03-2026 09:00:21</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2152" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno33">33</td>
+			                <td>25-03-2026 21:00:15</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2151" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno34">34</td>
+			                <td>25-03-2026 18:09:45</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2150" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno35">35</td>
+			                <td>25-03-2026 16:33:27</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2149" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno36">36</td>
+			                <td>25-03-2026 10:30:25</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2148" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno37">37</td>
+			                <td>25-03-2026 06:45:00</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2147" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno38">38</td>
+			                <td>25-03-2026 02:06:11</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2146" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno39">39</td>
+			                <td>24-03-2026 21:00:11</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2145" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno40">40</td>
+			                <td>24-03-2026 17:00:19</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2144" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno41">41</td>
+			                <td>24-03-2026 14:00:16</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2143" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno42">42</td>
+			                <td>24-03-2026 09:00:14</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2142" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno43">43</td>
+			                <td>24-03-2026 02:06:20</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2141" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno44">44</td>
+			                <td>23-03-2026 22:00:58</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2140" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno45">45</td>
+			                <td>23-03-2026 17:00:12</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2139" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno46">46</td>
+			                <td>23-03-2026 15:32:31</td>
+              <td>Pascal Gras</td>
+              <td>+5521983570067</td>
+              <td>pg.movisafe@gmail.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2138" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno47">47</td>
+			                <td>23-03-2026 14:00:23</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2137" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno48">48</td>
+			                <td>23-03-2026 09:15:03</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2136" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno49">49</td>
+			                <td>23-03-2026 02:00:38</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2135" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                      <tr>
+                                          <td id="srno50">50</td>
+			                <td>22-03-2026 23:45:46</td>
+              <td>CRI</td>
+              <td>+552199660-1002</td>
+              <td>cri24@movisafe-americalatina.com</td>
+              <td>MOVISAFE</td>
+              <td>
+                <i class="fa fa-circle text-success"></i>              </td>
+              <td>
+                <a href="https://movisos-admin.movisafe-americalatina.com/index.php/admin/alertdetails/2134" class=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            
+                  
+
+  
+
+<script>
+  function confirmdelete1(id) {
+    //var model='<div class="modal fade" id="exampleModalx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><h5 class="modal-title" id="exampleModalLabel">Ready to Leave?'+id+'</h5></div>'
+    var model = '<div class="modal fade" id="exampleModalx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="exampleModalLabel">Ready to Leave?' + id + '</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div><div class="modal-body"> Are you sure to delete?</div><div class="modal-footer"><button class="btn primary-color-dark text-light" type="button" data-dismiss="modal">Cancel</button><a class="btn primary-color-dark text-light" href="delete/' + id + '">Yes</a></div></div></div></div>';
+    $('#model').append(model);
+    alert("id is" + id);
+
+  }
+  $(document).ready(function() {
+    $('.delete_employee').click(function(e) {
+      e.preventDefault();
+      var id = $(this).attr('data-emp-id');
+      var parent = $(this).parent("td").parent("tr");
+      bootbox.dialog({
+        message: "Are you sure you want to Delete ?",
+
+        buttons: {
+          success: {
+            label: "No",
+            className: "btn-success btn-sm",
+            callback: function() {
+              $('.bootbox').modal('hide');
+            }
+          },
+          danger: {
+            label: "Delete!",
+            className: "btn-danger btn-sm",
+            callback: function() {
+              $.ajax({
+                  type: 'POST',
+                  url: 'delete',
+                  data: 'id=' + id
+                })
+                .done(function(response) {
+
+                  bootbox.alert(response, function() {
+                    window.location.reload();
+                  });
+                  //location.reload(); 
+                })
+                .fail(function() {
+                  bootbox.alert('Error....');
+                })
+            }
+          }
+        }
+      });
+    });
+  });
+
+  $(document).on('click', '.view_data', function() {
+    var employee_id = $(this).attr("id");
+    if (employee_id != '') {
+      $.ajax({
+        url: "https://localhost/movi-sos/index.php/admin/seletedata",
+        method: "POST",
+        data: {
+          sid: employee_id
+        },
+        success: function(data) {
+          $('#employee_detail').html(data);
+          $('#dataModal').modal('show');
+        }
+      });
+    }
+  });
+</script>
+<!-- <div id="dataModal" class="modal fade">  
+      <div class="modal-dialog">  
+           <div class="modal-content">  
+                <div class="modal-header">  
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>  
+                     <h4 class="modal-title">Employee Details</h4>  
+                </div>  
+                <div class="modal-body" id="employee_detail">  
+                </div>  
+                <div class="modal-footer">  
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
+                </div>  
+           </div>  
+      </div>  
+ </div>   -->
+      
+      </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<script>
+  function changestatus(id, status) {
+
+    $.ajax({
+      type: "POST",
+      url: "update_status",
+      data: "id=" + id + "&status=" + status,
+      success: function(msg) {
+        alert(msg);
+        $('#status' + id).html(msg);
+      }
+    });
+  }
+
+  function comfirmdelete() {
+    return confirm("Are you sure to delete");
+  }
+
+
+  $(document).on('click', '.status_checks', function() {
+    var status = ($(this).hasClass("btn btn-success btn-sm")) ? '0' : '1';
+    var msg = (status == '0') ? 'Deactivate' : 'Activate';
+
+    var current_element = $(this);
+
+    $.ajax({
+      type: "POST",
+      url: "https://localhost/ci_project/index.php/admin/status_update",
+      data: {
+        id: $(current_element).attr('data'),
+        status: status
+      },
+      success: function(data) {
+        // alert(url);
+        location.reload();
+      }
+    });
+
+  });
+
+  function searchFilter(page_num) {
+    page_num = page_num ? page_num : 0;
+    var keywords = $('#keywords').val();
+    var sortBy = $('#sortBy').val();
+    $.ajax({
+      type: 'POST',
+      url: 'https://movisos-admin.movisafe-americalatina.com/index.php/admin/ajaxPaginationAlertlist/' + page_num,
+      data: 'page=' + page_num + '&keywords=' + keywords + '&sortBy=' + sortBy,
+      beforeSend: function() {
+        $('.loading').show();
+      },
+      success: function(html) {
+        $('#postList').html(html);
+        var count = page_num + 1;
+        var total = 50;
+        var i = 1;
+        for (i = 1; i <= total; i++) {
+          $('#srno' + i).html(count++);
+        }
+        $('.loading').fadeOut("slow");
+      }
+    });
+  }
+</script>
+<div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dependents List</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body" id="employee_detail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-indigo btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div></div><deepl-input-controller translate="no"></deepl-input-controller><div id="monica-content-root" class="monica-widget" style="pointer-events: auto;"></div></body></html>
